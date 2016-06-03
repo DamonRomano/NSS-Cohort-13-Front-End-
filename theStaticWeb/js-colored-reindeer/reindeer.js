@@ -5,7 +5,7 @@ var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid",
                 "Donner", "Blitzen"];
 
 
-// var hohohoElement = document.getElementById("coloredReindeer");
+var hohohoElement = document.getElementById("coloredReindeer");
 
 // Your task is to loop through all the reindeer in the array,
 // and add the name of the reindeer to the single HTML <div> element provided.
@@ -18,5 +18,13 @@ var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid",
 // Red Dancer
 // etc...
 
-var coloredReindeer = colors.concat(reindeer);
-  console.log("coloredReindeer");
+
+if (reindeer.length < colors.length) {
+  for (var i = 0; i < reindeer.length; i++) {
+    console.log( colors[i], reindeer[i] );
+  }
+} else {
+      for (var i = 0; i < colors.length; i++){
+      console.log( colors[i], reindeer[i] );
+    }
+  }
